@@ -25,7 +25,7 @@ def buscar_dados_commodities(simbolo, periodo='5y', intervalo='1d'):
     dados['simbolo'] = simbolo
     return dados
 
-def buscar_todos_dados_commoties(commodities):
+def buscar_todos_dados_commodities(commodities):
     '''
     Função para buscar os dados de commodities
     '''
@@ -37,7 +37,7 @@ def buscar_todos_dados_commoties(commodities):
     return pd.concat(todos_dados)
 
 if __name__ == '__main__':
-    dados_concatenados = buscar_todos_dados_commoties(commodities)
+    dados_concatenados = buscar_todos_dados_commodities(commodities)
     print(dados_concatenados)
     
     
