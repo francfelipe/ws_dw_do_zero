@@ -9,5 +9,5 @@ datawarehouse:
       port: "{{ env_var('DB_PORT_PROD') | int }}"
       dbname: "{{ env_var('DB_NAME_PROD') }}"
       schema: "{{ env_var('DB_SCHEMA_PROD') }}"
-      threads: "{{ env_var('DB_THREADS_PROD') | int }}"
+      threads: 1 #"{{ env_var('DB_THREADS_PROD') | int }}"
       keepalives_idle: 0
