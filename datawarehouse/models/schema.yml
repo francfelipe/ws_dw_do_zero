@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: dbsalesaovivo_wlyn
+    schema: public
+    tables:
+      - name: commodities
+        description: "Tabela que contém dados históricos de commodities"
+        columns:
+          - name: Date
+            description: "Data da cotação"
+          - name: Close
+            description: "Valor de fechamento da cotação"
+          - name: simbolo
+            description: "Simbolo da commodity"
+
+      - name: movimentacao_commodities
+        description: "Tabela seed"
+        columns:
+          - name: date
+            description: "Data da transação"
+          - name: symbol
+            description: "Símbolo da commodity"
+          - name: action
+            description: "Tipo de transação (buy/sell)"
+          - name: quantity
+            description: "Quantidade transacionada"
